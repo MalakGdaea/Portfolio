@@ -1,0 +1,17 @@
+.description {
+    color: var(--sub-text-color);
+    width: 80%;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+
+@media (max-width: 768px) {
+   .description {
+    width: 100%;
+   }
+}

@@ -1,0 +1,18 @@
+.normalContainer {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.outlinedContainer {
+    background-color:transparent;
+}
+
+.normalContainer, .outlinedContainer {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+}

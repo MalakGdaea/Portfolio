@@ -1,0 +1,54 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .cover {
+    background-color: black;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.3;
+  }
+  
+  .backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2; /* Ensures the video stays behind the content */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: var(--text-color);
+    width: 40%;
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 100px;
+  }
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .yellowText {
+    color: var(--primary-color);
+  }
+
+  a {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+}

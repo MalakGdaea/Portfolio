@@ -1,0 +1,24 @@
+.subText {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--sub-text-color);
+}
+
+.headText {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 4rem;
+}
+
+.contentText {
+    margin-bottom: 3rem;
+    color: var(--sub-text-color);
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}

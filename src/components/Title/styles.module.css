@@ -1,0 +1,14 @@
+.title {
+    margin-bottom: 2rem;
+}
+.subText {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--sub-text-color);
+}
+
+.headText {
+   margin-top: 0;
+   margin-bottom: 0;
+   font-size: 4rem;
+}

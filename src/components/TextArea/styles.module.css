@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.label {
+
+}
+.input {
+    height: 100px;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.input:focus {
+    outline: none;
+}

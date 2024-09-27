@@ -1,0 +1,51 @@
+.cardContainer {
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    padding: 0.7rem;
+    width: 17rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 15rem;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.gitHub {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    background-color: black;
+}
+
+.gitHub img {
+    height: 100%;
+    width:100%;
+    z-index: 1;
+}
+
+.descriptionContainer p {
+   word-wrap: break-word;
+   overflow-wrap: break-word; 
+   color: var(--sub-text-color);
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
