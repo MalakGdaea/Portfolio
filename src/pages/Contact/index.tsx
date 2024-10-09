@@ -13,6 +13,7 @@ import { sendEmail } from "../../services/SendEmail";
 const Contact: React.FC = () => {
     const [messageSended, setMessageSended] = useState<boolean | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
+    const EMPTY_FELID_MESSAGE = "Please fill in all the fields: Name, Email, and Message.";
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -24,7 +25,19 @@ const Contact: React.FC = () => {
             [name]: value,
         })
     }
+
+    const checkFormFields = (): boolean => {
+        if (form.email === '' || form.message === '' || form.name === '') {
+            return false;
+        }
+        return true;
+    }
+
     const handleSubmit = async () => {
+        if (!checkFormFields()) {
+            alert(EMPTY_FELID_MESSAGE);
+            return;
+        }
         setIsLoading(true);
         const isSuccessfullySend = await sendEmail(form);
         setMessageSended(isSuccessfullySend);
