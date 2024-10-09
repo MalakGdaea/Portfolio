@@ -14,11 +14,8 @@ const Home: React.FC = () => {
         </video>
         <div className={styles.content}>
             <h1>Hi, It's <span className={styles.yellowText}>Malak</span></h1>
-            <h3>I'm a <TextTyping words={["Software Developer", "Web Developer", "Believer"]} style={styles.yellowText} /></h3>
-            <p>Honors Computer Science graduate and Full Stack Developer
-                skilled in MERN stack, React, JavaScript, TypeScript,
-                and Node.js. Seeking to leverage my expertise in developing
-                quality software solutions as a full-stack web developer.</p>
+            <h3>I'm a <TextTyping words={["Software Developer", "Web Developer", "Code Explorer"]} style={styles.yellowText} /></h3>
+            <p>I'm a software developer with experience in building dynamic web and mobile applications. Passionate about creating efficient and user-friendly solutions.</p>
             <div className={styles.buttons}>
                 <CustomButton
                     text="Contact Me"
