@@ -49,3 +49,9 @@
     flex-wrap: wrap;
     margin-bottom: 0.6rem;
 }
+
+@media (max-width: 768px) {
+    .cardContainer {
+        width: fit-content;
+    }
+}

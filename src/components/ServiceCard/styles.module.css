@@ -48,3 +48,12 @@
 .title {
     font-size: medium;
 }
+
+@media (max-width : 768px) {
+    .cardContainer {
+        width: 10rem;
+        height: 12rem;
+    }
+
+}
+

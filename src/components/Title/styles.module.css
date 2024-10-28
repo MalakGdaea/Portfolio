@@ -10,5 +10,6 @@
 .headText {
    margin-top: 0;
    margin-bottom: 0;
-   font-size: 4rem;
+   overflow-wrap: break-word;
+   font-size: clamp(2rem, 4vw, 4rem);
 }

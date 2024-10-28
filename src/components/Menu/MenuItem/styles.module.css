@@ -3,17 +3,20 @@
     cursor: pointer;
 }
 
-.container::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background-color: var(--primary-color);
-    transform: scaleX(0); /* Start hidden */
-    transform-origin: left; /* Scale from the left */
-    transition: transform 0.5s ease; /* Smooth transition */
+
+@media (min-width: 768px) {
+    .container::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: var(--primary-color);
+        transform: scaleX(0); /* Start hidden */
+        transform-origin: left; /* Scale from the left */
+        transition: transform 0.5s ease; /* Smooth transition */
+    }
 }
 
 .container:hover::after {

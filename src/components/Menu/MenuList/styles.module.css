@@ -1,5 +1,24 @@
 .container {
     display: flex;
     flex-direction: row;
-    gap: 25px
+  
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  gap: 25px
+}
+
+.burgerMenu {
+  display:none;
+}
+
+@media (max-width: 768px) {
+  .menuItems {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
 }

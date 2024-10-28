@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import styles from "./styles.module.css";
 import { motion } from "framer-motion"
 import { Tag } from "../../types/Tag";

@@ -11,7 +11,8 @@ const Work: React.FC = () => {
     return <div className='container'>
         <Title title="Work Experience & Education." subTitle="WHAT HAVE I DONE SO FAR" />
         <VerticalTimeline>
-            {experiences.map((experience) => <VerticalTimelineElement
+            {experiences.map((experience, index) => <VerticalTimelineElement
+                key={index}
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: experience.BgColor, color: '#fff' }}
                 contentArrowStyle={{ borderRight: `7px solid ${experience.BgColor}` }}

@@ -9,9 +9,18 @@
 
 .container {
   margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px; 
+  margin-right: 50px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
 
 .menu {
   position: absolute;

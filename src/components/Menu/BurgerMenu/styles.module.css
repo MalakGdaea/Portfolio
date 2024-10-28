@@ -1,0 +1,52 @@
+.burgerMenuContainer {
+  position: relative;
+}
+.burgerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.burgerButton div {
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar1, .bar2, .bar3 {
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  left:-40px;
+  width:fit-content;
+  padding: 10px;
+  box-shadow: 0px 0px 10px white;
+  z-index: 2;
+  border-radius: 5px;
+}
