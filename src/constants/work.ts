@@ -107,6 +107,17 @@ const technologies = [
 
 const experiences = [
     {
+        title: "Lecturer of Introduction to Computer Science",
+        company_name: "Sapir College",
+        icon: sapir,
+        BgColor: "#FF9914",
+        iconBg: "#E6DEDD",
+        date: "Nov 2023 - Present",
+        points: [
+            "Inspire and educate students in the fundamentals of computer science, covering essential topics like programming, algorithms, and data structures, while fostering a dynamic and inclusive learning environment.",
+        ],
+    },
+    {
         title: "Instructor",
         company_name: "Axioma Achievements",
         icon: acsioma,
